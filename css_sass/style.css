@@ -1,0 +1,94 @@
+.Home {
+  color: blue;
+}
+
+.Nosotros {
+  color: green;
+}
+
+.Servicios {
+  color: red;
+}
+
+.Contactanos {
+  color: yellow;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header li {
+  display: inline-block;
+  padding: 2rem;
+}
+
+header a {
+  text-decoration: none;
+  color: aliceblue;
+  padding: 1rem;
+}
+
+header a:hover {
+  background-color: silver;
+  opacity: 0.7;
+}
+
+.mapGet {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.parrafo1Hijo1 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.parrafo2Hijo1 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.parrafo3Hijo1 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.parrafo4Hijo1 {
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-bottom: 1rem;
+}
+
+.estiloParrafo1, .estiloParrafo2, .estiloParrafo3, .estiloParrafo4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+}
+
+.parrafo1Hijo2 img {
+  width: 12rem;
+  height: 12rem;
+  padding-left: 3rem;
+}
+
+.parrafo2Hijo2 img {
+  width: 12rem;
+  height: 12rem;
+  padding-left: 3rem;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,6 @@
+$mapMenu: (Home:blue,Nosotros:green,Servicios:red,Contactanos:yellow);
+@each $var, $color in $mapMenu {
+    .#{$var} {
+        color: $color;
+    }
+}

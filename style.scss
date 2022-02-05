@@ -1,0 +1,77 @@
+@import "menu";
+
+*{
+margin: 0;
+padding: 0;
+}
+
+header {
+    background-color: black;
+    display: flex;
+    li {
+        display: inline-block;
+        padding: 2rem;
+    }
+    a {
+        text-decoration: none;
+        color: aliceblue;
+        padding: 1rem;
+        &:hover {
+            background-color: silver;
+            opacity: 0.7;
+        }
+    }
+}
+
+$MapGet: (fuente:2rem,alineacion:center);
+.mapGet{
+    font-size: map-get($MapGet,fuente);
+    text-align: map-get($MapGet,alineacion);
+}
+
+@mixin estilo {
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 1rem;
+}
+
+.parrafo1Hijo1 {
+    @include estilo;
+}
+.parrafo2Hijo1 {
+    @include estilo;
+}
+.parrafo3Hijo1 {
+    @include estilo;
+}
+.parrafo4Hijo1 {
+    @include estilo;
+}
+
+
+.estiloParrafo1 {
+font-family: Arial, Helvetica, sans-serif;
+text-align: justify;
+}
+.estiloParrafo2 {
+    @extend .estiloParrafo1;
+}
+.estiloParrafo3 {
+    @extend .estiloParrafo1;
+}
+.estiloParrafo4 {
+    @extend .estiloParrafo1;
+}
+@mixin estiloImagen ($ancho,$alto,$lateral) {
+    width: $ancho;
+    height: $alto;
+    padding-left: $lateral;
+}
+.parrafo1Hijo2 img  {
+    @include estiloImagen(12rem,12rem, 3rem)
+}
+
+.parrafo2Hijo2 img {
+    @include estiloImagen(12rem,12rem ,3rem )
+}
